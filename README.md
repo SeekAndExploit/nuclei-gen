@@ -5,7 +5,7 @@ Generate [nuclei](https://github.com/projectdiscovery/nuclei) YAML templates fro
 ## Install
 
 ```bash
-git clone https://github.com/yourname/nuclei-gen
+git clone https://github.com/SeekAndExploit/nuclei-gen/
 cd nuclei-gen
 pip install -e .
 ```
