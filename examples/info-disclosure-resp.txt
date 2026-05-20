@@ -1,0 +1,5 @@
+HTTP/2 200
+content-type: application/json
+server: nginx
+
+{"accessToken":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyXzEyMyJ9.signature","refreshToken":"eyJhbGciOiJSUzI1NiJ9.eyJleHAiOjk5OTk5OTk5OTl9.sig","user":{"email":"victim@example.com","role":"admin"}}

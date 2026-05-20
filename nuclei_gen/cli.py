@@ -88,8 +88,16 @@ def main():
         ap.error("Could not extract URL from input")
 
     # Parse response
-    with open(args.response) as f:
-        resp = parse_response(f.read())
+    try:
+        with open(args.response) as f:
+            resp = parse_response(f.read())
+    except FileNotFoundError:
+        ap.error(
+            f"Response file not found: {args.response}\n"
+            "  Save the HTTP response to a file first, e.g.:\n"
+            "    curl -i https://target.com/api/endpoint > resp.txt\n"
+            "  Or check examples/ for sample response files."
+        )
 
     # Analysis hints
     sensitive = detect_sensitive(resp.body)

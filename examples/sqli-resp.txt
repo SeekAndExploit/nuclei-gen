@@ -1,0 +1,5 @@
+HTTP/2 500
+content-type: text/html
+server: Apache
+
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''test''' at line 1
